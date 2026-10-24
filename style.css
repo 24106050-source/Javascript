@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    transition: 0.3s;
+}
+
+.container {
+    width: 700px;
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    margin-bottom: 30px;
+}
+
+.shopping-box,
+.color-box,
+.price-box {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+select,
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.image-box {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.image-box img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    padding: 10px 18px;
+    font-size: 15px;
+}
+
+.btn-tinh {
+    width: 100%;
+    background: #222;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-tinh:hover {
+    background: #444;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 8px;
+}
+
+.result p {
+    display: flex;
+    justify-content: space-between;
+}
+
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e63946;
+}
+
+.color-box {
+    text-align: center;
+}
+
+.blue {
+    background: #3498db;
+    color: white;
+}
+
+.red {
+    background: #e74c3c;
+    color: white;
+}
+
+.yellow {
+    background: #f1c40f;
+    color: black;
+}
+
+.btn-price {
+    background: #27ae60;
+    color: white;
+    width: 100%;
+    font-weight: bold;
+}
+
+#bangGia {
+    margin-top: 20px;
+    font-size: 17px;
+    line-height: 2;
+}

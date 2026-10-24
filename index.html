@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mua sắm đơn giản</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>WEBSITE MUA HÀNG</h1>
+
+        <div class="shopping-box">
+
+            <h2>Chọn sản phẩm</h2>
+
+            <label>Sản phẩm:</label>
+
+            <select id="sanPham" onchange="doiHinh()">
+                <option value="ao">Áo: 200.000đ</option>
+                <option value="quan">Quần: 300.000đ</option>
+                <option value="giay">Giày: 500.000đ</option>
+            </select>
+
+            <label>Số lượng:</label>
+
+            <input type="number" id="soLuong" value="1" min="1">
+
+            <div class="image-box">
+                <img id="hinhSanPham"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEqMEgxu0O2Zd_WVB6jp92krkeJ6vkUma-7eMqNA83Yw&s=10"
+                     alt="Áo">
+            </div>
+
+            <button class="btn-tinh" onclick="tinhTien()">
+                TÍNH TIỀN
+            </button>
+
+            <div class="result">
+                <p>Tiền hàng: <span id="tienHang">0đ</span></p>
+                <p>Giảm giá: <span id="giamGia">0đ</span></p>
+                <p class="total">
+                    Phải trả: <span id="phaiTra">0đ</span>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="color-box">
+
+            <h2>Đổi màu nền</h2>
+
+            <button class="blue" onclick="doiMau('blue')">
+                Xanh
+            </button>
+
+            <button class="red" onclick="doiMau('red')">
+                Đỏ
+            </button>
+
+            <button class="yellow" onclick="doiMau('yellow')">
+                Vàng
+            </button>
+
+        </div>
+        <div class="price-box">
+
+            <button class="btn-price" onclick="hienBangGia()">
+                XEM BẢNG GIÁ
+            </button>
+
+            <div id="bangGia"></div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
